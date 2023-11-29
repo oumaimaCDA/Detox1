@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Titre de Site</title>
+    <style>
+        /* Styles pour les onglets */
+        .onglets {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .onglet {
+            cursor: pointer;
+            padding: 10px;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            background-color: #f0f0f0;
+        }
+
+        .onglet:hover {
+            background-color: #e0e0e0;
+        }
+
+        .contenu-onglet {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <ul class="onglets">
+        <li class="onglet" onclick="afficherContenu('onglet1')">Onglet 1</li>
+        <li class="onglet" onclick="afficherContenu('onglet2')">Onglet 2</li>
+        <li class="onglet" onclick="afficherContenu('onglet3')">Onglet 3</li>
+    </ul>
+
+    <div id="onglet1" class="contenu-onglet">
+        <h2>Contenu de l'onglet 1</h2>
+        <p>Insérez le contenu spécifique à votre premier onglet ici.</p>
+    </div>
+
+    <div id="onglet2" class="contenu-onglet">
+        <h2>Contenu de l'onglet 2</h2>
+        <p>Insérez le contenu spécifique à votre deuxième onglet ici.</p>
+    </div>
+
+    <div id="onglet3" class="contenu-onglet">
+        <h2>Contenu de l'onglet 3</h2>
+        <p>Insérez le contenu spécifique à votre troisième onglet ici.</p>
+    </div>
+
+    <script>
+        function afficherContenu(idOnglet) {
+            // Masquer tous les contenus d'onglet
+            var contenusOnglet = document.querySelectorAll('.contenu-onglet');
+            contenusOnglet.forEach(function(contenu) {
+                contenu.style.display = 'none';
+            });
+
+            // Afficher le contenu de l'onglet sélectionné
+            var contenuSelectionne = document.getElementById(idOnglet);
+            contenuSelectionne.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

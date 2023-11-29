@@ -1,0 +1,100 @@
+
+
+
+
+      nav>a{
+        list-style-type: none;
+        text-align: left;
+        text-transform: uppercase;
+        margin: 0;
+        background-color:#ccc;
+        padding: 15px;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 240px;
+        }
+        img {
+          max-width: 80%;
+        }
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        color: black;
+        font-style: italic;
+        margin-top: 3px;
+        padding: 8px;
+      
+      }
+      ul {
+        list-style-type: none;
+        font-size: 30px;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 3;
+      }
+    
+      img {
+        float: right;
+        border-top-left-radius: 10%;
+        padding-top: 10px;
+        border: 100px;
+        background-position-x: left;
+      }
+      body {
+        background-color: rgb(126, 205, 7);
+      }
+
+      p {
+        padding: 3%;
+        color: black;
+        font-size: 50px;
+        text-align: left;
+        background-repeat: no-repeat;
+      }
+      .one {
+        color: white;
+        background-image: none;
+        font-size: 45px;
+      }
+      .lire {
+        cursor: pointer;
+        background-color: greenyellow;
+        color:green;
+        padding: 15px 20px;
+        border: 10px ;
+        font-size: x-large;
+      }
+      .lire:hover {
+        background-color: rgb(38, 0, 255);
+        color: white;
+      }
+     
+      .photo{
+        width: 500px;
+        height: 0;
+      }
+      footer{
+        position: absolute;
+        right: -11%;
+        transform:translate(-50%, -50%);
+        padding: 10px;
+        background-color:transparent;
+        border-radius: 1px;
+       
+}
+     nav{
+      display: flex;
+      padding: 20px;
+      background-color: #000;
+      justify-content: center;
+      background-image: linear-gradient(black, green);
+      font-size: large;
+      z-index: 3;
+     } 
